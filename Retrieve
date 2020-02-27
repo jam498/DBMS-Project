@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> DBMS Shuffle Prject </title>
+    <style type = "text/css">
+    td, th, table {border: thin solid black;}
+    </style>
+</head>
+<body>
+
+<?php
+    
+// Get input data
+    $id = $_POST["id"];
+    $sname = $_POST["sname"];
+    $sfile = $_POST["sfile"];
+    $pref = $_POST["pref"];
+    $nextid = $_POST["nextid"];
+    $action = $_POST["action"];
+    $statement = $_POST["statement"];
+
+// Connect to MySQL
+$db = mysqli_connect("db1.cs.uakron.edu:3306", "jam498", "eternal42");
+if (!$db) {
+     print "Error - Could not connect to MySQL";
+     exit;
+}
+
+// Select the database
+$er = mysqli_select_db($db,"ISP_jam498");
+if (!$er) {
+    print "Error - Could not select the database";
+    exit;
+}
+
+ $query = "SELECT id, Songname FROM playlist";
+?>
+</body>
+</html>
