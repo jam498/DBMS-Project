@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<body>
+    <p>
+    <p>Hi there, this do a post</p>
+<form action = "Retrieve.php"
+          method = "post">
+<input type = "text";  name = "statement" size = "40" value = "select * from Music" id = "in" /> <br /><br />
+    <p>And This is a button</p>
+    <input type = "reset"  value = "Reset Form" />
+        <input type = "submit"  value = "Excute SQL" />
+
+    </p>
+    <p>1. SQL must state "INSERT [id], [songname], [link] INTO mastersongs" to add records into the database</p>
+    <p>2. "SELECT songname FROM mastersongs WHERE plays > 30" to search and print the database</p>
+    <p>3. Update: "UPDATE mastersongs SET plays = plays + 1 WHERE songID = [songID]"</p>
+    <p>4. "DELETE * FROM [userID] WHERE pname = [pname]</p>
+    <p>This is a list of tasks that we will want to accomplish by 3/17</p>
+</form>
+</body>
+</html>
